@@ -1,0 +1,16 @@
+
+<h3>Title</h3>
+<p><%= @task.title %></p>
+<h3>Details</h3>
+<p><%= @task.details %></p>
+    <% if @task.completed %>
+       <label for="completed">Completed: </label>
+       <input type="checkbox" name="completed" checked>
+       <% else %>
+       <label for="completed">Completed: </label>
+       <input type="checkbox" name="completed">
+    <% end %>
+    <br>
+    <br>
+
+<%= link_to('Back to full list', '/tasks') %>
