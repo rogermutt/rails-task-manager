@@ -13,4 +13,11 @@
     <br>
     <br>
 
+<h3>Edit the task</h3>
+<%= link_to('Edit', edit_task_path(@task)) %>
+    <br>
+    <br>
+<%= link_to('Delete', delete_task_path(@task), method: :delete) %>
+    <br>
+    <br>
 <%= link_to('Back to full list', '/tasks') %>
